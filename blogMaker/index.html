@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body class="bg-gray-400">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+  
+</html>
+
+
+<!-- you can have bun i instead of npm i -->
+<!-- npm i @reduxjs/toolkit react-redux react-router-dom appwrite @tinymce/tinymce-react html-react-parser react-hook-form
+
+appwrite is backend and db
+tinmce for visual code editor help
+ -->
+
+ <!-- cr8 environment variable  .env part so secrets should not get uploaded on browser and no one can fetch it. here also we keep .env different and production also different eg- vercel, netlify, aws etc. in secret manager we cp pst this variables thier,
+  accesiblity depend on framework or library eg- create react app, vite or next js 
+  
+  
+  cr8 environment varible always on root not inside src but main project dir
+  also we keep away from git ignore , righht click on file and addToGitIgnore 
+  instead we .env.sample but empty out varibles
+
+
+  access is different in each in create react app - REACT_APP_VAR but in vite VITE_ in next its different
+
+  //console.log(process.env.REACT_APP_APPWRITE_URL); //this is for create react app for vite its VITE_
+  console.log(import.meta.env.VITE_APPWRITE_URL); //here we access like this
+
+#enable permission all users inside collection
+add attributes under collection - userId, title, content, status and featuredImage
+cr8 index status- ASC
+cr8 storage/bucket and images and get its bucket id and permission like above to all
+
+APPWRITE is BACKEND AS A SERVICE
+
+
+
+  //but more standard way to do it src/conf/conf.js since it may psbl that varible not load with above since env var all in string may number also psbl which cant accessible
+  -->
+
+  <!-- 
+  now we cr8/use appwrite services in appwrite/auth.js
+  //we cr8 class so even appwrite auth has to be removed some day still it'll work so we create services ie class
+
+
+  
+1HR VID) 
+We use React Hook Form (there's good one but we use this)
+register we use and handleSubit() method in Login.jsx as login()
+handleSubmit method allows our method which is login to submit the form in onSubmit event action of form
+{...register} this is compulsion in <Input> field otherwise values will override when input used in elsewhere
+
+  {/* placeholder will go by ...props above */}
+  {/*async(data) will based on this register("email") part*/}
+
+
+   -->
